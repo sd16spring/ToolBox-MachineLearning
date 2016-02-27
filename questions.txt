@@ -1,0 +1,4 @@
+1. The general trend of the curve is upwards, with accuracy increasing as the percentage of data used for training increases, but the curve appears to level off at higher percentages.
+2. In the range of 55 to 80 percent of data used, there tends to be noise in the curve.  This is likely because in this range, there aren't enough tests to consistently gauge the accuracy of the model.
+3. The curves tend to be significantly more smooth after 100 trials.
+4. For larger values of C (eg. 10 **-1), the curve rapidly increases and normalizes at a high percentage, whereas at smaller values of C (eg. 10 **-50), the curve normalizes at a very low percentage and oscilates about that point.
