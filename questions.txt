@@ -1,0 +1,15 @@
+1. What is the general trend in the curve?
+
+The curve slopes upwards indicating that as the program uses a larger percentage of the data for training as opposed to testing, the testing reults are improved. The more data the computer is able to learn from, the better it will be at predicting future results. 
+
+2. Are there parts of the curve that appear to be nosier than others? why?
+
+I took the average of all 10 trials for each trial size percentage so I did not see any noise... Was I not supposed to take the average? If I had to take a guess; though, I would assume there would be more noise in the earlier section of the graph when the computer was given less data for training. The accuracy and consistancy of the testing output would be less reliable since the computer had less to learn from and is essentially guessing. It could get lucky and guess correctly, or get unlucky and guess incorrectly. This would cause alot of variability (noise) in the data.
+
+3. How many trial do you need to get a smooth curve?
+
+Again, since I took the average of the reults for each trial size, my graoh is smooth regardless of the number of trials. I believe the smoothness of the graph in general would depend on the complexity of the data set. It would take many more trials to achieve consistant results for a more complicated application such as determining a medical diagnosis based on a list of symptoms.
+
+4. Try different values for C. What happens?
+
+At values around 10**-20, I am observing a very strange bevavior in which the curve completely degrades to a seemingly sandom shape, but for all values above 10**-25, the curve becomes completely straight. Maybe this is because of the average thing again, I am not sure... 
