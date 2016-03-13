@@ -8,7 +8,7 @@ from sklearn.linear_model import LogisticRegression
 
 data = load_digits()
 # print data.DESCR
-num_trials = 500
+num_trials = 200
 train_percentages = range(5,95,5)
 test_accuracies = numpy.zeros(len(train_percentages))
 standards = numpy.zeros(len(train_percentages))
@@ -25,7 +25,9 @@ for i in range(len(train_percentages)):
 
 # TODO: your code here
 
-#first do a train, test, split for each percentage num_trials number of times
+#first do a train, test, split for each percentage num_trials number of times.
+#add data to test_accuracies, standards
+#we will add scatter data later
 for i in range(len(train_percentages)):
     percent = train_percentages[i] / 100.0
 
