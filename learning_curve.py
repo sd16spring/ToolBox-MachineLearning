@@ -8,7 +8,7 @@ from sklearn.linear_model import LogisticRegression
 
 data = load_digits()
 # print data.DESCR
-num_trials = 50
+num_trials = 500
 train_percentages = range(5,95,5)
 test_accuracies = numpy.zeros(len(train_percentages))
 standards = numpy.zeros(len(train_percentages))
@@ -42,6 +42,17 @@ for i in range(len(train_percentages)):
     standards[i] = numpy.std(test_data[i])
     print i
 
+#create data for scatter plot
+scatterX = []
+for i in train_percentages:
+    for j in range(num_trials):
+        scatterX.append(i)
+scatterY = []
+
+for i in test_data:
+    for j in i:
+        scatterY.append(j)
+#end create data for scatter plot
 
 fig = plt.figure("Test Accuracy")
 plt.plot(train_percentages, test_accuracies)
@@ -52,5 +63,9 @@ fig2 = plt.figure("Standard Deviation")
 plt.plot(train_percentages, standards)
 plt.xlabel('Percentage of Data Used for Training')
 plt.ylabel('Standard Deviation of Test Set')
-plt.show()
 
+fig3 = plt.figure("Scatter")
+plt.scatter(scatterX, scatterY, s=.1)
+plt.xlabel('Percentage of Data Used for Training')
+plt.ylabel('Accuracy on Test Set')
+plt.show()
