@@ -37,8 +37,7 @@ for i in range(len(train_percentages)):
                                                             train_size=percent)
         model = LogisticRegression(C=10**-10)
         model.fit(X_train, y_train)
-        test = model.score(X_test,y_test)
-        test_data[i][j] = test #add datapoint to test_data
+        test_data[i][j] = model.score(X_test,y_test) #add datapoint to test_data
 
     test_accuracies[i] = numpy.average(test_data[i])
     standards[i] = numpy.std(test_data[i])
@@ -49,8 +48,8 @@ scatterX = []
 for i in train_percentages:
     for j in range(num_trials):
         scatterX.append(i)
-scatterY = []
 
+scatterY = []
 for i in test_data:
     for j in i:
         scatterY.append(j)
