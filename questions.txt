@@ -1,0 +1,8 @@
+The general trend of the curve is upward. It increases more rapidly over lower percentages of data used, and increases less rapidly over higher percentages of data used. 
+
+The curve appears to have noise between 30-60 percent of data used fairly consistently. I think this may have to do with the amount of data available for learning when compared to the amount available for testing.
+
+Around 100 trials are required for a decently smooth curve. Upwards of 400 trials give the curve a much smoother finish.
+
+It appears that the C value of 10 smooths the curve out so that it increases in a more linear progression. A graph with a C value of 2 looks very logarithmic. It also starts with an accuracy around 0.82.
+
