@@ -1,0 +1,14 @@
+1. The general trend appears to be a negative exponential distribution.
+This means that for lower train percentages, we will will have a high positive derivative.
+As the train percentage increases, the derivative decreses.
+See figure 500gTrials.png for actual plot.
+
+2. Some parts of the graph are noiser than others.  In general, the graph increases noise until
+train percentage = 30.  Then it decreases for the rest of percentages.
+See 500TrialStandardDeviation.png to see a standard deviation.
+
+3. 100 for smooth average.  500 for smooth-ish standard deviation
+
+4. A higher c value makes the program much more accurate.  It also makes it take much longer.
+I tried c = 1.  This lead to accuracies of 88-98 % for all splits.  It also took a long time
+to train.  Standard deviations as a whole drastically went down.  The standard deviation curve also changed to something more like a parabola. 
