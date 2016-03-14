@@ -17,10 +17,32 @@ test_accuracies = numpy.zeros(len(train_percentages))
 # You should repeat each training percentage num_trials times to smooth out variability
 # for consistency with the previous example use model = LogisticRegression(C=10**-10) for your learner
 
-# TODO: your code here
+def train_model(train_percentage):
+	train_size = train_percentage / 100.0
+
+	X_train, X_test, y_train, y_test = train_test_split(data.data, data.target, train_size=train_size)
+	model = LogisticRegression(C=10**-14)
+	model.fit(X_train, y_train)
+
+	return model.score(X_test,y_test)
+
+for index in range(len(train_percentages)):
+	print index
+	temp = []
+	for i in range(50):
+		temp.append(train_model(train_percentages[index]))
+	test_accuracies[index] = numpy.mean(temp)
+
 
 fig = plt.figure()
 plt.plot(train_percentages, test_accuracies)
 plt.xlabel('Percentage of Data Used for Training')
 plt.ylabel('Accuracy on Test Set')
 plt.show()
+
+
+'''CODE GRAVEYARD'''
+#inside train_model:
+	# print "Train accuracy %f" %model.score(X_train,y_train)
+	# print "Test accuracy %f"%model.score(X_test,y_test)
+	

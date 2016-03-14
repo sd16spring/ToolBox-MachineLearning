@@ -1,0 +1,9 @@
+EFunkhouser questions.txt
+3/13/2016
+
+Machine Learning Toolbox
+
+1. The general trend of the curve is exponential approaching 1 (high slope at first, then tapers off as percentage of data used for training increases).
+2. I'm not seeing a part of the curve that clearly has more noise than the rest. My guess at what part I would EXPECT to see more noise in is the beginning of the curve, since it seems like if you have a small training dataset it could be hit-or-miss as to whether the stuff you train with is a good representation of the 'average' handwriting (what you're most likely to see in the testing dataset).
+3. 1000 trials got me a smooth curve.
+4. Making C much larger (10^-6) got me a 'curvier' curve, with a more pronounced change in slope from beginning to end. Making C much smaller (10^-14) flattened the curve significantly, especially in the middle portion.
