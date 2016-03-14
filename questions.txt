@@ -1,0 +1,5 @@
+questions.txt
+1. The general trend of the curve: accuracy increases with percentage increase, but the increase in accuracy decreases for high percentages (the curve flattens out). It looks like a 1 - 1/exp(x) curve. 
+2. The curve seems to be noisier around 40-70%. There may not be enough tests in this range.
+3. 100 trials makes a nice smooth curve. 500 is really smooth, 
+4. Increasing C makes the results more accurate at lower percentages. Low C values need a larger percentage to reach high accuracy. High C also takes a lot longer to run.
