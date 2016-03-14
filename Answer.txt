@@ -1,0 +1,11 @@
+﻿1.
+The Accuracy on Test Set increases as Percentage of Data Used for Training increases, but the slope keeps decreasing slightly. 
+2.
+When percentage used of data is relatively small, the curve is noisier. Standard deviation is relatively high when the dataset is relatively small.
+3.
+I set num_trails as 1000 and it looks smooth, but still need more to make it perfectly smooth
+4.
+As C gets bigger, the bending of learning curve becomes more obvious. C is the 'inverse of regularization strength', so bigger C means weaker regularization, which make the graph smoother. 
+
+
+
