@@ -1,0 +1,7 @@
+1. The general trend is upward, as one would expect; the more data you give it to learn from, the better it learns.
+
+2. No, they all seem to have the same noise level. I would expect the right side to have more noise, since there is less data to test the machine with, but it actually comes out just as smooth as the bottom of the graph.
+
+3. The graph converges to a nice shape around 20 trials or so, although it is still easy to see the noise if you take a data point at each percentage, even with 50 trials per.
+
+4. Lower values of C yield slower rates of learning; a steeper learning curve in the colloquial sense. Higher values of C do the opposite. By turning C up way high (I went as far as 10**-1), the machine is able to effectively read handwriting with less than 10% of the data to learn from. However, it also slows the 
