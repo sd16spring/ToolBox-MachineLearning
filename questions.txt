@@ -1,0 +1,7 @@
+1. The accuracey increases as the percentage of the data partitioned for training increases.
+
+2. The ends of the curve appear to be slightly less noisey than the middle. This may be because there is a greater chance of accuracy when the amount of training data is very high, and there is little chance for variation because the testing set was so small. At the bottom, the reverse is true where there is so little training data and so much testing data, so there is a very small chance that the tests will yield a high accuracy. In the middle, there is a greater chance for variation in accuracey.
+
+3. The curve seems to be much smoother after about 25 trials
+
+4. The trend of the curve becomes increasingly logarithmic as C becomes larger.
