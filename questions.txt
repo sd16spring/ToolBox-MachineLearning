@@ -1,0 +1,9 @@
+1.	In general, the equation curve is convex down and increasing. It starts at a minimum test set accuracy of about 0.2. This means the algorithm has about a 1/5 chance of correctly guessing the answer when 5% of the total test set is used to train it, and the remaining 95% of the test set is used to test it. It maxes out at a test set accuracy of about 0.8. This means the algorithm has about a 4/5  chance of correctly guessing the answer when 95% of the total test set is used to train it, and the remaining 5% of the test set is used to test it.
+2.	I generally had bigger variance in accuracy when smaller percentages of data were used to train the algorithm. This is likely because when the algorithm has less data to work with, its results fluctuate much more due to chance.
+3.	You can get a relatively smooth curve with as little as 20 trials.
+ 
+	However, I found I got the smoothest results with upwards of 140 trials.
+
+4.	When c = 10-20: There is a large initial spike, and then test set accuracy levels out to about 0.1. 
+
+	When c = 100: The graph is noticeably rounder and more convex.
