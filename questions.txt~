@@ -1,0 +1,7 @@
+1. Generally, as the percentage of data used increases, so does the accuracy on the test set.
+
+2. It seemed to me that the whole curve appeared to be noisy, especially at a low number of trials. There didn't seem to be an area that was nosier than others.
+
+3. After around 700 or 800 trials, the curve starts to become smooth. 
+
+4. As C gets larger, the graph becomes smoother, and as C gets smaller, the graph becomes very noisy. 
