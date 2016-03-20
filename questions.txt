@@ -1,0 +1,4 @@
+1. The general trend in the curve is upwards, with some amount of diminishing returns at higher percentages of data used for training.
+2. The lower percentages of data used for training tends to result in more noise. This makes sense because with less training data, the model is likely to have more fluctuations in accuracy.
+3. 1000 trials produces a decently smooth curve.
+4. As C increases, the accuracy values all increase since the acceptable threshold decreases (C is the inverse of regularization strength). The graph also acquires a more curved shape, suggesting that the rate of diminishing returns increases as C increases. In other words, the first few percentage points of increase for low values of C matter less than for they do for high values of C.
