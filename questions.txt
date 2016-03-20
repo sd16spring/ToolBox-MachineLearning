@@ -1,0 +1,9 @@
+﻿1. What is the general trend in the curve?
+As percentage of data used for training increases, so does the accuracy on the test set.
+2. Are there parts of the curve that appear to be noisier than others?  Why?
+The curve between 35%/40% to 60% is generally noisier than the others. This is probably because when the test size is super small, there is a high chance that the accuracy will be low, just as when the test size is super large, there is a high chance that the accuracy will be high. However, in the middle, there is more uncertainty since the test size cannot determine the accuracy as well (because there are not enough trials in this range), and so the graph demonstrates this uncertainty by being noisier.
+3. How many trials do you need to get a smooth curve?
+The curve gets pretty smooth by 500 trials, but gets very smooth by 800 trials.
+4. Try different values for C (by changingLogisticRegression(C=10**-10)).  What happens?  
+When C is larger (ex: C = (10**-1), the curve more closely resembles a logarithmic curve; it's a smoother curve; it reaches a higher accuracy (0.96). When C is smaller (ex: C = (10**-50), the graph doesn't resemble any type of curve; it's noisier all around; it peaks to a smaller and smaller accuracy (0.098).
+
