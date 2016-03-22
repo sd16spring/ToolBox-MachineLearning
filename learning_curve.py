@@ -7,17 +7,21 @@ from sklearn.cross_validation import train_test_split
 from sklearn.linear_model import LogisticRegression
 
 data = load_digits()
-print data.DESCR
-num_trials = 10
-train_percentages = range(5,95,5)
-test_accuracies = numpy.zeros(len(train_percentages))
+num_trials = 100
+train_percentages = range(5,90,5)
+test_accuracies = [] #numpy.zeros(len(train_percentages))
 
-# train a model with training percentages between 5 and 90 (see train_percentages) and evaluate
-# the resultant accuracy.
-# You should repeat each training percentage num_trials times to smooth out variability
-# for consistency with the previous example use model = LogisticRegression(C=10**-10) for your learner
-
-# TODO: your code here
+for i in train_percentages: #runs through different percentages
+	list_of_n = []
+	for n in range(num_trials): #runs a given number of times --> average data
+		#Partition data into two sets: training and testing.
+		X_train, X_test, y_train, y_test = train_test_split(data.data, data.target, train_size=i)
+		model = LogisticRegression(C=10**-10)#10**-10) #use the Multinomial Logistic Regression algorithm
+		model.fit(X_train, y_train)
+		accuracy_of_n = model.score(X_test,y_test) #find accuracy
+		list_of_n.append(accuracy_of_n) #add each new score to list
+	average_n = sum(list_of_n)/len(list_of_n) #average list
+	test_accuracies.append(average_n) #append average to test_accuracies list
 
 fig = plt.figure()
 plt.plot(train_percentages, test_accuracies)
