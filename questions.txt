@@ -1,0 +1,7 @@
+1. The general trend of the curve is up.
+
+2. The middle of the curve is the noisiest. I think this is because when the training percentage is low/high, the machine is more likely to get a definitively low/high answer: It either doesn't have nearly enough information or it has enough to make a good guess. When the training percentage is somewhere in the middle, the machine's success is more variable, because sometimes it does have enough information and sometimes it doesn't. This results in more noise in the center of the graph, between about 30% and 50%.
+
+3. It takes about 1000 trials to get a smooth-ish curve.
+
+4. When I increase the value of C, the curve looks much better. The lower the value of C, the noisier the curve. 
