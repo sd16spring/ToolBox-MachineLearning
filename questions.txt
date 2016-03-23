@@ -1,0 +1,4 @@
+﻿1. The curve generally increases and is fairly linear.
+2. The beginning part of the curve generally seems to be a lot noisier than the end of the curve. This is probably due to the fact that when the computer is only learning from 5% of the data, it is basically guessing for the entirety of the testing set of numbers, which leads to inaccurate data.
+3. I got a fairly smooth curve with about 100 trials. 70 trials was still a bit bumpy. With 200 trials, there were still some bumps at the beginning of the curve.
+4. When I changed C to 1/10, the graph appeared to be more exponential than linear. The test accuracy numbers were much higher for all percentages. The graph was also fairly smooth. When I changed C to  10^(-15), the numbers were about the same as 10^(-10), but the graph was much bumpier. 
