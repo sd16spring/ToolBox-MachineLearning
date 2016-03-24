@@ -1,0 +1,11 @@
+1. What is the general trend in the curve?
+The accuracy of the test generally increases as the percentage of the data used to train the machine increases.
+
+2. Are there parts of the curve that appear to be noisier than others?  Why?
+The curve seems to be consistently noisy at 10 trials.
+
+3. How many trials do you need to get a smooth curve?
+The curve started to smooth out at 2000 trials per percentage.
+
+4. Try different values for C (by changing LogisticRegression(C=10**-10)).  What happens?  If you want to know why this happens, see this Wikipedia page as well as the documentation for LogisticRegression in scikit-learn.
+As C gets larger, the noise in the curve decreases.
