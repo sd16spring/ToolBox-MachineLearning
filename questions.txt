@@ -1,0 +1,4 @@
+1. The general trend of the curve is upwards.
+2. Yes, the beginning of the graph tends to be noisier than the rest of the graph. I believe this occurs because the computer is trying to test with only a small portion of the data which would cause a lot of variability in the accuracy of predictions.
+3. Around 1000 trials gave me a smooth curve.
+4.  Higher values of C gave me a smother curve that typically make an increasing graph with negative concavity.  Lower values of C made the graph much more noisy.
