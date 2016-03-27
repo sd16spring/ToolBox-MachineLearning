@@ -1,0 +1,7 @@
+1. It seems like a logarithmic graph - it is increasing but has a downward curve.
+
+2. It seems to be noisiest in the 40-60 range. I would imagine because this is the area where the training set becomes larger than the testing set.
+
+3. It seems to smooth out upwards of 75-100 trials.
+
+4. With a much larger C (10^-1, 10), the graph rises sharply in the 20-30% range, then mellows out a lot. With a very small C (10^-20), the graph shoots up quickly at the beginning then falls down after about 25%.
