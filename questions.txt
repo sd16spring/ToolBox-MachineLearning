@@ -1,0 +1,9 @@
+    There is a general upwards trend in the curve...i.e. as the training set gets larger, the results are mor accurate
+
+    It seems particularly noisy when the training set is around 80-90%...probably because at that point the test set is so small that
+    a few oddball results really impact the rest of the curve
+
+    I achieved a readably smooth curve around 50 trials.  At 500 trials, the curve was much smoother.
+
+    I didn't notice much difference other than it seemed to change the amount of noise.
+    I am not completely sure if this is what I should be seeing or not though
