@@ -1,0 +1,10 @@
+1. The general trend in the curve is upwards - the more data you are using for the training, the better the accuracy of
+ the test set is!
+2. The small end of the curve (low percentage of data used for training) is very noisy because you are dealing with a
+random set so the training may not reflect the actual characteristics of the letter well (in other words, you may have
+outliers in the set of letters used for training when the percentage of characters used for training is low).
+3. In order to get a smooth (not super spiky) curve, I tried 100 trials, which helped a lot but wasn't enough to reduce
+all of the "spikiness"; at 1000 trials, the curve is reasonably smooth
+4. As I try different values of C, the curve changes. Using 100 trials each, the curve at C=1**-10 is extemely smooth,
+C=10**-10 is fairly "lumpy/spikey" (linear in smaller portions of the graph) and at C=100**-10 much more so (linear in
+large portions of the graph).
