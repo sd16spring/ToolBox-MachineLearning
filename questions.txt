@@ -1,0 +1,4 @@
+1. The general trend is upward.
+2. The beginning and end of the curve appear to be noisiest. This is likely because testing and training both require a certain amount of data to work well, so when almost all the data is being used for one or the other the curve can get messed up.
+3.The curve was pretty smooth around 5000 trials. A good way to smooth the curve even more at large numbers of trials was to change the step size in the percentages from 5 to 1.
+4. Higher C values emphasize noise, and lower C values smooth.
