@@ -1,0 +1,4 @@
+1.) Upward; generally, the more of the data is used in training, the more accurate the results are.
+2.) Yes, the smaller values. Less training data leads to more inconsistent results.
+3.) At num_trials = 50, the curve seems pretty consistently smooth.
+4.) At larger values of C, the calculations take significantly longer, but test accuracy increases more steeply with percentage of training data. It seems to asymptotically approach 90% accuracy. At smaller values, the calculations are fast, but the accuracy is terrible.
