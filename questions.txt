@@ -1,0 +1,5 @@
+1. The accuracy on test set was correlated to the percentage of data used for training.
+2. The noisiest part of the graph seems to be the middle, ranging from 25 percent to 65 percent. The likely reason for this is there is a larger variation in results when the percentage of data used for training is not extreme. More trials would probably smooth out the curve and reduce noise.
+3. Although there were always variations, the curve seemed to be a lot smoother when I did 25 tests instead of 10.
+4. As C decreased, the accuracy got higher at lower percentage of data used for training.
+
