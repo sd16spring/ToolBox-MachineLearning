@@ -1,0 +1,5 @@
+
+1. The general trend of the curve is positive correlation
+2. There is more noise towards the two ends of the curve, probably because there is too much imbalance either way.
+3. The graph is fairly smooth around 3000 trials
+4. As C increases the graph becomes more of a curve than a line, appearing to hit some sort of asymptote.
