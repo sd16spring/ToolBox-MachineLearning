@@ -1,0 +1,7 @@
+1. The general trend in the curve is positive.
+
+2. At only 10 trials, almost the entire curve seems to be noisy. Typically, accuracy from training on 5% on the test is lower than on 90%, but everything between is pretty inconsistent.
+
+3. 100 trials makes a fairly smooth curve, but it's still pretty piecewise.
+
+4. The scale of accuracy on the test set gets smaller with a smaller C value and the entire curve becomes less smooth.
