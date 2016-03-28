@@ -1,0 +1,4 @@
+1) The bigger the training set, the more accurate the model is on the test set.
+2) The lower end of the curve is noisy, because accuracy is highly dependent on how representative the training set data is of the test set. Regression to the mean causes larger sets to be inherently more "stable" in their evaluation.
+3)100 trials produces a much smoother curve.
+4)As the inverse regularization coefficient increases, the model tries to regress to more and more accurate levels, creating a more accurate model. (In rough terms). This causes a much more representative accuracy graph.
