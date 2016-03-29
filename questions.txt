@@ -1,0 +1,11 @@
+1. The general trend in the curve is that as you use a larger percentage of your data for training, you get better results in testing
+This is because it has more time to 'learn' and it can generate more accurate factors for the test.
+The curve could reasonable be approximated to a line, but it actually looks much more like a log
+
+2. Some parts of the curve are noisier because the randomness for how it's broken up matters more for smaller values
+For really small training sets you can get a set that is highly representative of handwriting or one that is much less representative
+
+3. You my curve at 10 was distinctly not smooth, at 100 it was roughly not smooth, at 1000 it was very smooth
+somewhere between 100 and 1000 you will get a smooth curve, but it's garunteed on the at 10^3 trials
+
+4.C is the how accurate you want the model to be. At higher values it becomes more precise and at lower values the model is rougher.
