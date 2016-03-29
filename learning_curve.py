@@ -8,7 +8,7 @@ from sklearn.linear_model import LogisticRegression
 #prewritten code:
 data = load_digits()
 print data.DESCR
-num_trials = 10
+num_trials = 50
 train_percentages = range(5,95,5)
 test_accuracies = [] #numpy.zeros(len(train_percentages)) #couldn't find a way to change these zero values
 
@@ -20,14 +20,18 @@ test_accuracies = [] #numpy.zeros(len(train_percentages)) #couldn't find a way t
 
 for percentage in train_percentages:
 	x = 0
-	while x < 10:
+	new_list = []
+	while x < num_trials:
 		x += 1
 		X_train, X_test, y_train, y_test = train_test_split(data.data, data.target, train_size=percentage)
-		model = LogisticRegression(C=10**-10)
+		model = LogisticRegression(C=100)
 		model.fit(X_train, y_train)
-		test_accuracies.append(model.score(X_train,y_train))
-		print "Train accuracy %f" %model.score(X_train,y_train)
-		print "Test accuracy %f"%model.score(X_test,y_test) 
+		new_list.append(model.score(X_test,y_test))
+		#print "Train accuracy %f" %model.score(X_train,y_train)
+		#print "Test accuracy %f"%model.score(X_test,y_test) 
+	average = sum(new_list)/len(new_list)
+	test_accuracies.append(average)
+
 
 print train_percentages
 print test_accuracies
