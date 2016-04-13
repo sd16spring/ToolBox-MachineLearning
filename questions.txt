@@ -1,0 +1,15 @@
+1. What is the general trend in the curve?
+
+It seems inverse, and the bigger percent you use for training, the more accurate the results are.
+
+2. Are there parts of the curve that appear to be noisier than others?  Why?
+
+The first 1/2 (the middle part especially) seems way noisier than the end of the curve, where most of the set is used for training. 
+
+3. How many trials do you need to get a smooth curve?
+
+Well, I couldn't get a smooth curve, but by around 20 trials, you can see a clear trend in the graph that plots every trial.
+
+4. Try different values for C (by changing LogisticRegression(C=10**-10)).  What happens?  If you want to know why this happens, see this Wikipedia page as well as the documentation for LogisticRegression in scikit-learn.
+
+The lower the value, the noisier the data is. A C value of 1 generates a pretty clean line, whereas a C value of 10^-20 shows wild variation in the trials.
