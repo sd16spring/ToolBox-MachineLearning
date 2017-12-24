@@ -1,6 +1,6 @@
 # Mini Project - MachineLearning
 
-Before you start, make sure you have scikit-learn and all its dependencies. Run these commands to ensure this:
+Before you start, make sure you have scikit-learn and all its dependencies:
 
     $ sudo apt-get install build-essential python-dev python-setuptools python-numpy python-scipy libatlas-dev libatlas3gf-base
     $ sudo apt-get install python-matplotlib
