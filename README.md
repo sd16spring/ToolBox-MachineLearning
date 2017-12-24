@@ -1,7 +1,12 @@
 # Mini Project - MachineLearning
 
-learning_curve.py is a simple script that takes in grayscale, 8x8 pixel numbers from the built-in scikit-learn database and classifies them with Multinomial Logistic Regression (MLR). 
+Before you start, make sure you have scikit-learn and all its dependencies. Run these commands to ensure this:
 
+    $ sudo apt-get install build-essential python-dev python-setuptools python-numpy python-scipy libatlas-dev libatlas3gf-base
+    $ sudo apt-get install python-matplotlib
+    $ sudo pip install -U scikit-learn
+  
+learning_curve.py is a simple script that takes in grayscale, 8x8 pixel numbers from the built-in scikit-learn database and classifies them with Multinomial Logistic Regression (MLR). 
 
 MLR works by partitioning the digits into two sets: a training set and a testing set. The training set is used for inferring the relationship between the current 8x8 picture and the estimated number. The testing set evaluates the training set's performance and applies it to the untrained, testing set. Having two sets is essential for avoiding possible overfitting to the training set. 
 
